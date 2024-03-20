@@ -23,12 +23,14 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['point_of_sale', 'contacts'],
+    'depends': ['point_of_sale', 'contacts', 'report_xlsx'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        #'views/views.xml',
+        # 'views/templates.xml',
+        'views/pos_commission_wizard/views.xml',
+        'security/ir.model.access.csv'
     ],
 }
