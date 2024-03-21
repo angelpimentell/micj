@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_pos_commission" model="ir.actions.act_window">
+        <field name="name">Sales Commissions</field>
+        <field name="res_model">pos.commission.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_report_order_commission" name="Sales Commissions" action="action_report_pos_commission"
+              parent="point_of_sale.menu_point_rep" sequence="5"/>
+
+
+    <report
+            id="report_payment_xls"
+            string="Patient Card Excel"
+            model="pos.payment"
+            report_type="xlsx"
+            name="pos_commission.report_payment_xls"
+            file="pos_commission.report_payment_xls"/>
+
+</odoo>

@@ -29,7 +29,7 @@
     'data': [
         'security/ir.model.access.csv',
 
-        'views/pos_commission_wizard/views.xml',
-        'views/product_template/product_template_form.xml',
+        'views/pos_commission_wizard/pos_commission_wizard_form.xml',
+        'views/pos_commission_wizard/pos_commission_wizard_menuitem.xml',
     ],
 }
