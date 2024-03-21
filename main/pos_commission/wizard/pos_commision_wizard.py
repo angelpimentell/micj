@@ -24,20 +24,22 @@ class PosCommissionWizard(models.Model):
         orders = self.env['pos.order'].search([
             ('date_order', '<=', self.end_date),
             ('date_order', '>=', self.start_date),
+            ('state', 'in', ['paid', 'done', 'invoiced']),
         ])
 
         user_data = {}
 
         for order in orders:
+            user_id = order.partner_id.referrer_id.id
 
             if order.create_uid.id not in user_data:
-                user_data[order.create_uid.id] = 0
+                user_data[user_id] = 0
 
             for line in order.lines:
                 commission = line.product_id.commission
 
-                if commission:
-                    user_data[order.create_uid.id] += line.price_subtotal_incl * commission / 100
+                if commission and len(order.partner_id.referrer_id) > 0:
+                    user_data[user_id] += line.price_subtotal_incl * commission / 100
 
         data = []
 

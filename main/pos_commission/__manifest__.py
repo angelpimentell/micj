@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     'name': "pos_commission",
 
@@ -32,5 +31,6 @@
         'views/product_template/product_template_form.xml',
         'views/pos_commission_wizard/pos_commission_wizard_form.xml',
         'views/pos_commission_wizard/pos_commission_wizard_menuitem.xml',
+        'views/res_partner/res_partner_form.xml'
     ],
 }
