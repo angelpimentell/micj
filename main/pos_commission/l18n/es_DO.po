@@ -18,71 +18,71 @@ msgstr ""
 #. module: pos_commission
 #: model_terms:ir.ui.view,arch_db:pos_commission.view_pos_commission_wizard
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_product_product__commission
 #: model:ir.model.fields,field_description:pos_commission.field_product_template__commission
 msgid "Commission"
-msgstr ""
+msgstr "Comisión"
 
 #. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_pos_commission_wizard__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_pos_commission_wizard__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_pos_commission_wizard__display_name
 #: model:ir.model.fields,field_description:pos_commission.field_report_pos_commission_report_payment_xls__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre para mostrar"
 
 #. module: pos_commission
 #: model_terms:ir.ui.view,arch_db:pos_commission.view_pos_commission_wizard
 msgid "Download"
-msgstr ""
+msgstr "Descargar"
 
 #. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_pos_commission_wizard__end_date
 msgid "End Date"
-msgstr ""
+msgstr "Fecha Final
 
 #. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_pos_commission_wizard__id
 #: model:ir.model.fields,field_description:pos_commission.field_report_pos_commission_report_payment_xls__id
 msgid "ID"
-msgstr ""
+msgstr "identificación"
 
 #. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_pos_commission_wizard____last_update
 #: model:ir.model.fields,field_description:pos_commission.field_report_pos_commission_report_payment_xls____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Última modificación el"
 
 #. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_pos_commission_wizard__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_pos_commission_wizard__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: pos_commission
 #: model:ir.actions.report,name:pos_commission.report_payment_xls
 msgid "Patient Card Excel"
-msgstr ""
+msgstr "Tarjeta de paciente Excel"
 
 #. module: pos_commission
 #: model:ir.model,name:pos_commission.model_pos_commission_wizard
 msgid "Point of Sale Commission Report"
-msgstr ""
+msgstr "Informe de comisión de punto de venta"
 
 #. module: pos_commission
 #: model:ir.model,name:pos_commission.model_product_template
@@ -94,14 +94,15 @@ msgstr "Plantilla producto"
 #: model:ir.ui.menu,name:pos_commission.menu_report_order_commission
 #: model_terms:ir.ui.view,arch_db:pos_commission.view_pos_commission_wizard
 msgid "Sales Commissions"
-msgstr ""
+msgstr "Comisiones de ventas"
 
 #. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_pos_commission_wizard__start_date
 msgid "Start Date"
-msgstr ""
+msgstr "Fecha de Inicio"
 
 #. module: pos_commission
 #: model:ir.model,name:pos_commission.model_report_pos_commission_report_payment_xls
 msgid "report.pos_commission.report_payment_xls"
-msgstr ""
+msgstr "informe.pos_commission.report_pago_xls"
+
