@@ -7,9 +7,6 @@ class PartnerXlsx(models.AbstractModel):
 
     def generate_xlsx_report(self, workbook, data, lines):
         sheet = workbook.add_worksheet('COMISIONES')
-        # sheet.right_to_left()
-        # sheet.set_column(3, 3, 50)
-        # sheet.set_column(2, 2, 30)
         sheet.write(0, 0, 'REFERIDO')
         sheet.write(0, 1, 'MONTO')
 
