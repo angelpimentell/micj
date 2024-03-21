@@ -37,4 +37,7 @@ class PosCommissionWizard(models.Model):
             self.start_date = self.end_date
 
     def print(self):
-        return self.env.ref('pos_commission.report_payment_xls').report_action(self)
+        data = {
+            'name': 'Pedro',
+        }
+        return self.env.ref('pos_commission.report_payment_xls').report_action(self, data=data)
