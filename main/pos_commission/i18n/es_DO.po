@@ -90,6 +90,12 @@ msgid "Product Template"
 msgstr "Plantilla producto"
 
 #. module: pos_commission
+#: model:ir.model.fields,field_description:pos_commission.field_res_partner__referrer_id
+#: model:ir.model.fields,field_description:pos_commission.field_res_users__referrer_id
+msgid "Referrer"
+msgstr "Referidor"
+
+#. module: pos_commission
 #: model:ir.actions.act_window,name:pos_commission.action_report_pos_commission
 #: model:ir.ui.menu,name:pos_commission.menu_report_order_commission
 #: model_terms:ir.ui.view,arch_db:pos_commission.view_pos_commission_wizard
