@@ -20,7 +20,37 @@ class PosCommissionWizard(models.Model):
             self.start_date = self.end_date
 
     def print(self):
+
+        orders = self.env['pos.order'].search([
+            ('date_order', '<=', self.end_date),
+            ('date_order', '>=', self.start_date),
+        ])
+
+        user_data = {}
+
+        for order in orders:
+
+            if order.create_uid.id not in user_data:
+                user_data[order.create_uid.id] = 0
+
+            for line in order.lines:
+                commission = line.product_id.commission
+
+                if commission:
+                    user_data[order.create_uid.id] += line.price_subtotal_incl * commission / 100
+
+        data = []
+
+        for key, value in user_data.items():
+            data.append(
+                {
+                    'name': self.env['res.users'].browse(key).name,
+                    'amount': value,
+                }
+            )
+
         data = {
-            'name': 'Pedro',
+            'data': data
         }
+
         return self.env.ref('pos_commission.report_payment_xls').report_action(self, data=data)
