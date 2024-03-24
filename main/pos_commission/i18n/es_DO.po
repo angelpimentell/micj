@@ -56,7 +56,7 @@ msgstr "Descargar"
 #. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_pos_commission_wizard__end_date
 msgid "End Date"
-msgstr "Fecha Final
+msgstr "Fecha Final"
 
 #. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_pos_commission_wizard__id
@@ -116,5 +116,5 @@ msgstr "Fecha de Inicio"
 #. module: pos_commission
 #: model:ir.model,name:pos_commission.model_report_pos_commission_report_payment_xls
 msgid "report.pos_commission.report_payment_xls"
-msgstr "informe.pos_commission.report_pago_xls"
+msgstr ""
 

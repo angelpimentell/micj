@@ -30,16 +30,17 @@ class PosCommissionWizard(models.Model):
         user_data = {}
 
         for order in orders:
-            user_id = order.partner_id.referrer_id.id
+            if len(order.partner_id.referrer_id) > 0 and len(order.partner_id) > 0:
+                user_id = order.partner_id.referrer_id.id
 
-            if order.create_uid.id not in user_data:
-                user_data[user_id] = 0
+                if order.create_uid.id not in user_data:
+                    user_data[user_id] = 0
 
-            for line in order.lines:
-                commission = line.product_id.commission
+                for line in order.lines:
+                    commission = line.product_id.commission
 
-                if commission and len(order.partner_id.referrer_id) > 0:
-                    user_data[user_id] += line.product_id.list_price * commission / 100
+                    if commission > 0:
+                        user_data[user_id] += line.product_id.list_price * commission / 100
 
         data = []
 
