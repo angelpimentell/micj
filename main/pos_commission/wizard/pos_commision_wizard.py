@@ -39,7 +39,7 @@ class PosCommissionWizard(models.Model):
                 commission = line.product_id.commission
 
                 if commission and len(order.partner_id.referrer_id) > 0:
-                    user_data[user_id] += line.price_subtotal_incl * commission / 100
+                    user_data[user_id] += line.product_id.list_price * commission / 100
 
         data = []
 
