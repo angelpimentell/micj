@@ -27,6 +27,12 @@ msgid "Commission"
 msgstr "Comisión"
 
 #. module: pos_commission
+#: code:addons/pos_commission/models/product_template.py:0
+#, python-format
+msgid "Commission percentage couldn't be greater than 100."
+msgstr "El porcentaje de comisión no puede ser superior a 100."
+
+#. module: pos_commission
 #: model:ir.model.fields,field_description:pos_commission.field_pos_commission_wizard__create_uid
 msgid "Created by"
 msgstr "Creado por"
